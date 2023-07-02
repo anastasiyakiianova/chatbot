@@ -5,3 +5,11 @@ To start:
 ```git clone git@github.com:anastasiyakiianova/chatbot.git
 docker build -t koa:latest .
 docker run -it --name koa -dp 3000:3000 koa:latest
+
+
+To install packages manually we use:
+```
+yarn add nodemon
+yarn add koa-json
+yarn add koa-router
+yarn add koa-body
