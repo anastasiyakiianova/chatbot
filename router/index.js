@@ -4,6 +4,7 @@ const router = new Router();
 const Task = require('../api/task');
 
 router.post('/addTask', async (ctx) => {
+    console.log("ctx.request.body", ctx.request.body);
     try {
         const result = await Task.addTask();
         ctx.body = result;
